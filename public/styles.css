@@ -99,15 +99,19 @@ a {
   z-index: 50;
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(5, 7, 10, 0.75);
+  background: rgba(5, 7, 10, 0.82);
+}
+
+.site-header .container {
+  width: min(1380px, calc(100% - 2rem));
 }
 
 .site-header .wrap {
-  height: 4.1rem;
+  min-height: 5.15rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .brand {
@@ -124,7 +128,7 @@ a {
 }
 
 .brand-lockup-image {
-  width: clamp(138px, 14.2vw, 206px);
+  width: clamp(150px, 13vw, 208px);
   height: auto;
   object-fit: contain;
   display: block;
@@ -163,19 +167,23 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.3rem;
+  justify-content: center;
+  gap: clamp(0.75rem, 1.3vw, 1.2rem);
+  flex: 1;
+  min-width: 0;
 }
 
 .nav-link {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
   padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
   position: relative;
   transition: color 0.3s var(--ease-smooth), transform 0.3s var(--ease-smooth);
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -206,12 +214,16 @@ a {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.7rem;
+  flex-shrink: 0;
 }
 
 .nav-actions .btn {
-  padding: 0.66rem 0.92rem;
-  font-size: 0.74rem;
+  padding: 0.72rem 1rem;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  min-height: 2.9rem;
+  border-radius: 0.8rem;
 }
 
 .mobile-toggle {
@@ -1231,11 +1243,11 @@ footer {
   }
 
   .site-header .wrap {
-    height: 3.8rem;
+    min-height: 4.1rem;
   }
 
   .brand-lockup-image {
-    width: 126px;
+    width: 134px;
   }
 
   .section {
@@ -1243,7 +1255,16 @@ footer {
   }
 
   .hero {
-    padding-top: 5.3rem;
+    padding-top: 4.4rem;
+  }
+
+  h1 {
+    font-size: clamp(1.85rem, 10vw, 2.5rem);
+    line-height: 1.1;
+  }
+
+  .lead {
+    font-size: 1rem;
   }
 
   .hero-video {
@@ -1268,6 +1289,7 @@ footer {
 
   .hero-actions .btn {
     width: 100%;
+    min-height: 2.65rem;
   }
 
   .hero-actions .btn-secondary {
