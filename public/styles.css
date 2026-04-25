@@ -318,7 +318,7 @@ a {
 }
 
 main {
-  padding-top: 1.5rem;
+  padding-top: 0.2rem;
 }
 
 .section {
@@ -326,7 +326,7 @@ main {
 }
 
 .hero {
-  padding: 6.2rem 0 4.5rem;
+  padding: 2.2rem 0 4.5rem;
 }
 
 .hero-grid {
@@ -1255,7 +1255,7 @@ footer {
   }
 
   .hero {
-    padding-top: 4.4rem;
+    padding-top: 2rem;
   }
 
   h1 {
