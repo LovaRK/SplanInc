@@ -1,0 +1,44 @@
+{
+  "leads": [
+    {
+      "id": "lead_1776862665187_gw3p27",
+      "name": "Enterprise Lead",
+      "email": "lead@example.com",
+      "company": "Northwind",
+      "role": "Oracle Program Lead",
+      "phone": "+1 510-320-3305",
+      "interest": "AI Agents for Oracle",
+      "message": "Need Oracle Cloud + AI agent implementation roadmap for SCM and ERP workflows.",
+      "createdAt": "2026-04-22T12:57:45.187Z",
+      "source": "website-contact-form"
+    },
+    {
+      "id": "lead_1776829436027_o91ilz",
+      "name": "QA User",
+      "email": "qa@example.com",
+      "company": "Acme Corp",
+      "role": "VP Ops",
+      "phone": "+1 555-0101",
+      "interest": "Enterprise AI",
+      "message": "Need a deployment architecture workshop next week.",
+      "createdAt": "2026-04-22T03:43:56.027Z",
+      "source": "website-contact-form"
+    }
+  ],
+  "newsletter": [
+    {
+      "id": "news_1776862665188_0yfbjv",
+      "email": "subscribe@example.com",
+      "createdAt": "2026-04-22T12:57:45.188Z"
+    },
+    {
+      "id": "news_1776829436026_t2vyoj",
+      "email": "news@example.com",
+      "createdAt": "2026-04-22T03:43:56.026Z"
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-04-22T03:43:42.995Z",
+    "updatedAt": "2026-04-25T02:23:06.058Z"
+  }
+}
